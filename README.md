@@ -35,9 +35,4 @@ _A clean, intuitive task manager with persistent storage_
 ```bash
 git clone https://github.com/abdallaskar/Todo_list_app.git
 cd Todo_list_app
-### Installation
 
-```bash
-git clone https://github.com/abdallaskar/Todo_list_app.git
-cd Todo_list_app
-```
