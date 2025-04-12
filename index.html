@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>To do list</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <h1> TO DO Orginzer</h1>
+    <!-- lable to do dark mode button  -->
+    <label class="switch">
+        <input type="checkbox" id="toggleDarkMode">
+        <span class="slider"></span>
+    </label>
+
+    <!-- form to get task and add it in todo list -->
+    <form method="get">
+        <input class="task_in" id="task" name="task" type="text" placeholder="Enter your task">
+        <button class="sub" id="add" type="button" value="Add">ADD</button>
+    </form>
+    <!-- class to view todo list  -->
+    <table class="tab_show" id="tab">
+        <tbody>
+        <tr>
+        </tr>
+        </tbody>
+    </table>
+
+
+    <script src="main.js"></script>
+</body>
+
+</html>

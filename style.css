@@ -1,0 +1,122 @@
+body{
+    text-align: center;
+}
+h1{
+    font-size: 45px;
+    color: #A00000;
+}
+
+/* switch dark mode */
+.switch {
+    position: absolute;
+    top: 30px;
+    right: 30px;
+    display: inline-block;
+    width: 50px;
+    height: 26px;
+}
+/* Hide default checkbox */
+.switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+/* Slider design span to be white circle*/
+.slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    transition: 0.4s;
+    border-radius:30px;
+}
+/* for toggling style  */
+.slider::before {
+    position: absolute;
+    content: "";
+    height: 18px;
+    width: 18px;
+    left: 4px;
+    bottom: 4px;
+    background-color: white;
+    transition: 0.4s;
+    border-radius: 50%;
+}
+/* Dark mode ON (toggle right) */
+input:checked+.slider {
+    background-color: #111;
+}
+input:checked+.slider::before {
+    transform: translateX(24px);
+}
+
+/* text input styling */
+.task_in{
+    width: 42%;
+    height: 35px;
+    border-radius: 12px;
+    font-size: 20px;
+}
+/* for add button styling */
+.sub{
+    width: 90px;
+    height: 42px;
+    border-radius: 12px;
+    background-color: gray;
+    font-size: 20px;
+}
+.sub:hover{
+    background-color: blue;
+    cursor: pointer;
+    
+}
+/* for table sytling  */
+.tab_show{
+    margin: 30px auto;
+}
+th{
+    background-color: #A00000;
+    width:300px;
+    color: white;
+    border-radius: 5px; 
+    font-size: 25px;
+}
+td{
+    width: 300px;
+    font-size: 25px;
+
+}
+/* for action cell and delet and edit */
+.action-cell {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+.action-btn {
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-size: 20px;
+    padding: 0 5px;
+}
+.edit-input {
+    width: 90%;
+    padding: 5px;
+    font-size: inherit;
+}
+/* *********toogle mode ***************** */
+body.dark-mode {
+    background-color: #121212;
+    color: white;
+}
+
+.dark-mode input,
+.dark-mode button {
+    background-color: #333;
+    color: white;
+    border: 1px solid #555;
+}
+
