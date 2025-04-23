@@ -35,7 +35,7 @@ _A clean, intuitive task manager with persistent storage_
 
 ### 🔗 Live Demo
 
-➡️ [Try it now!](https://youtu.be/1K8G1ki8Drs)
+➡️ [Watch video](https://youtu.be/sh9phUgfpj4)
 
 ### Installation
 
