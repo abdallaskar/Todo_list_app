@@ -1,0 +1,238 @@
+/* Start Global roules */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh;
+    width: 100%;
+}
+
+/* End Global roules */
+
+/* Start toggle mode */
+body.dark-mode {
+    background-color: #121212;
+    color: white;
+}
+
+.dark-mode input,
+.dark-mode button {
+    background-color: #333;
+    color: white;
+    border: 1px solid #555;
+}
+
+/* End toggle mode */
+
+
+/* Start header */
+.header {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 75%;
+    margin: 20px;
+}
+
+.header img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.header h1 {
+    font-size: 45px;
+    color: #A00000;
+    margin: 0 auto;
+    text-align: center;
+}
+
+/* Start Slider for toggle dark mode */
+/* Slider Container */
+.header .slider-container {
+    margin-left: 0;
+    align-self: flex-end;
+}
+
+/* Slider Styling */
+.slider {
+    position: relative;
+    display: inline-block;
+    width: 60px;
+    height: 34px;
+}
+
+.slider input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+.slider-toggle {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    transition: 0.4s;
+    border-radius: 34px;
+}
+
+.slider-toggle::before {
+    position: absolute;
+    content: "";
+    height: 26px;
+    width: 26px;
+    left: 4px;
+    bottom: 4px;
+    background-color: white;
+    transition: 0.4s;
+    border-radius: 50%;
+}
+
+input:checked+.slider-toggle {
+    background-color: #6200ea;
+}
+
+input:checked+.slider-toggle:before {
+    transform: translateX(26px);
+}
+
+/* End Slider for toggle dark mode */
+/* End header */
+
+/* Start main Section */
+.mainsection {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 75%;
+    margin: 20px;
+    padding: 20px;
+}
+
+/* start input styling */
+.mainsection .form {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    gap: 15px;
+}
+
+.mainsection .form .task_in {
+    height: 40px;
+    width: 55%;
+    border-radius: 12px;
+    font-size: 25px;
+}
+
+/* for add button styling */
+.mainsection .form .sub {
+    width: 100px;
+    height: 42px;
+    border-radius: 12px;
+    background: linear-gradient(45deg, #007BFF, #0056b3);
+    font-size: 25px;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+}
+
+.mainsection .form .sub:hover {
+    background: linear-gradient(45deg, #0056b3, #007BFF);
+    transform: scale(1.1) translateX(5px);
+}
+
+/* End input styling */
+/* Start table to show tasks */
+.mainsection .tablecontainer {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    margin-top: 20px;
+}
+
+.mainsection .tablecontainer .tab_show {
+    margin: 30px auto;
+    width: 80%;
+}
+
+.mainsection .tablecontainer .tab_show th {
+    background-color: #A00000;
+    color: white;
+    border-radius: 5px;
+    font-size: 27px;
+    text-align: center;
+}
+
+.mainsection .tablecontainer .tab_show td {
+    font-size: 27px;
+    text-align: center;
+    padding: 7px;
+
+}
+
+/* for action cell and delet and edit */
+.action-cell {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+}
+
+.action-btn {
+    display: block;
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-size: 20px;
+
+}
+
+.edit-input {
+    width: 85%;
+    padding: 5px;
+    font-size: inherit;
+}
+
+.check-box {
+    width: 25px;
+    height: 25px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+/* End tabl to show content */
+/* End main Section */
+/* Start footer */
+.footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 40px;
+    background-color: #A00000;
+    color: white;
+    font-size: 20px;
+    margin-top: auto;
+}
+
+.footer p {
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+/* End footer */

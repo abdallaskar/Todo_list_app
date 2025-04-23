@@ -1,34 +1,47 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
-    <title>To do list</title>
-    <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>todo list</title>
+    <link rel="stylesheet" href="CSS/style.css">
 </head>
 
 <body>
-    <h1> TO DO Orginzer</h1>
-    <!-- lable to do dark mode button  -->
-    <label class="switch">
-        <input type="checkbox" id="toggleDarkMode">
-        <span class="slider"></span>
-    </label>
+    <!-- header of page contain logo,heading and Dark mode button -->
+    <header class="header">
+        <img src="Images/myLogo.jpg" alt="logo">
+        <h1> ToDo Organizer</h1>
+        <!-- label to do dark mode button  -->
+        <div class="slider-container">
+            <label class="slider">
+                <input type="checkbox" id="theme-toggle">
+                <span class="slider-toggle"></span>
+            </label>
+        </div>
+    </header>
+    <!-- main section of page contain form to add task and table to show todo list  -->
+    <section class="mainsection">
+        <!-- form to get task and add it in todo list -->
+        <article class="form">
+            <input class="task_in" id="task" name="task" type="text" placeholder="Enter your task" autofocus>
+            <button class="sub" id="add" type="button" value="Add">ADD</button>
+        </article>
+        <!-- class to view todo list  -->
+        <article class="tablecontainer">
+            <table class="tab_show" id="tab">
+                <tbody>
+                </tbody>
+            </table>
+        </article>
+    </section>
+    <!-- footer of page contain creator name  -->
+    <footer class="footer">
+        <p>Created by Abdalla Sakr </p>
+    </footer>
 
-    <!-- form to get task and add it in todo list -->
-    <form method="get">
-        <input class="task_in" id="task" name="task" type="text" placeholder="Enter your task">
-        <button class="sub" id="add" type="button" value="Add">ADD</button>
-    </form>
-    <!-- class to view todo list  -->
-    <table class="tab_show" id="tab">
-        <tbody>
-        <tr>
-        </tr>
-        </tbody>
-    </table>
-
-
-    <script src="main.js"></script>
+    <script src="JS/main.js"></script>
 </body>
 
 </html>
