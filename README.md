@@ -15,7 +15,7 @@ _A clean, intuitive task manager with persistent storage_
 | ✅ Task Completion  | Task checkbox toggles strikethrough and saves state locally           |
 | 🖼️ Clean UI         | Minimal design with smooth hover effects & animations                 |
 
---- |
+
 
 ## 🛠️ Tech Stack
 
